@@ -20,5 +20,5 @@
 
 
 ## Fontes
-[Wikipedia](https://pt.wikipedia.org/wiki/MVC) MVC
-[Portal TSI](https://www.portalgsti.com.br/2017/08/padrao-mvc-arquitetura-model-view-controller.html) Padrão MVC | Arquitetura Model-View-Controller
+[Wikipedia](https://pt.wikipedia.org/wiki/MVC) - MVC
+[Portal TSI](https://www.portalgsti.com.br/2017/08/padrao-mvc-arquitetura-model-view-controller.html) - Padrão MVC | Arquitetura Model-View-Controller 
