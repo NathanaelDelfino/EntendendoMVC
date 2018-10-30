@@ -2,9 +2,9 @@
 ### Modelo-Visão-Controle
 
 ## Modelo
-* Camada resposavel por armazenar os dados.
-* Responsavel pela leitura, manipulação e validação do dados.
-* Responsavel por tratar as regras de negócio.
+* Camada responsável por armazenar os dados.
+* Responsável pela leitura, manipulação e validação do dados.
+* Responsável por tratar as regras de negócio.
 ...
 
 ## Visão
