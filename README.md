@@ -1,4 +1,4 @@
-# EntendendoMVC
+# Entendendo MVC
 ### Modelo-Visão-Controle
 
 ## Modelo
@@ -9,7 +9,7 @@
 
 ## Visão
 * Camada que exibe uma representação do dados.
-* É a camada de interface com o usuário (View). (Também conhecida como cliente-side)
+* É a camada de interface com o usuário (View). (Também conhecida como client-side)
 ...
 
 ## Controle

@@ -64,6 +64,7 @@
     </Page>
     <Compile Include="01_Modelo\ProdutosModelo.cs" />
     <Compile Include="02_Controle\Produto.cs" />
+    <Compile Include="03_Visao\Funcoes\ConversorDeFonteTamanho.cs" />
     <Compile Include="03_Visao\ProdutoView.xaml.cs">
       <DependentUpon>ProdutoView.xaml</DependentUpon>
     </Compile>
@@ -102,6 +103,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Imagens\lupa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

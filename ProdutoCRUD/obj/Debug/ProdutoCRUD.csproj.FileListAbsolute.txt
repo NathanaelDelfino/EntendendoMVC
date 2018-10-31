@@ -1,0 +1,17 @@
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\bin\Debug\ProdutoCRUD.exe.config
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\bin\Debug\ProdutoCRUD.exe
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\bin\Debug\ProdutoCRUD.pdb
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.csprojAssemblyReference.cache
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\03_Visao\ProdutoView.g.cs
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\MainWindow.g.cs
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\App.g.cs
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD_MarkupCompile.cache
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD_MarkupCompile.lref
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\03_Visao\ProdutoView.baml
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\MainWindow.baml
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.g.resources
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.Properties.Resources.resources
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.csproj.GenerateResource.cache
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.csproj.CoreCompileInputs.cache
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.exe
+C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\obj\Debug\ProdutoCRUD.pdb

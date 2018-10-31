@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProdutoCRUD._01_Modelo;
 
-namespace ProdutoCRUD._01_Modelo
+namespace ProdutoCRUD._02_Controle
 {
-    class Produto
+    public class Produto
     {
-        private static ProdutosModelo _modelo;
+        private  ProdutosModelo _modelo;
         
 
         public int Id { get; private set; }
@@ -25,13 +26,13 @@ namespace ProdutoCRUD._01_Modelo
             this.Id = id;
             this.CodigoBarras = codigoBarras;
             this.Descricao = descricao;
+
+            _modelo = new ProdutosModelo();
         }
         public bool Salvar()
         {
             try
             {
-                if (!Validar())
-                {
                     if (this.Id == 0)
                     {
                         _modelo.Insert(this);
@@ -41,11 +42,6 @@ namespace ProdutoCRUD._01_Modelo
                         _modelo.Update(this);
                     }
                     return true;
-                }
-                else
-                {
-                    return false;
-                }
             }catch(Exception ex)
             {
                 _Erro = ex.ToString();
@@ -61,23 +57,6 @@ namespace ProdutoCRUD._01_Modelo
         {
             return _modelo.Select(); 
         }
-        private bool Validar()
-        {
-            try
-            {
-                if (this.CodigoBarras == "") { throw new Exception("Código inválida!"); }
-                if (this.Descricao == "") { throw new Exception("Descrição inválida!"); }
-                if (this.Custo < 0) { throw new Exception("Custo inválido!"); }
-                if (this.Venda < 0) { throw new Exception("Custo inválido!"); }
 
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _Erro = ex.ToString();
-                return false;
-            }
-            
-        }
     }
 }
