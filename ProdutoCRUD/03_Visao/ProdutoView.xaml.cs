@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProdutoCRUD._02_Controle;
 
 namespace ProdutoCRUD._03_Visao
 {
@@ -22,6 +23,22 @@ namespace ProdutoCRUD._03_Visao
         public ProdutoView()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var produto = new Produto(Convert.ToInt32( CodigoBarras.Tag), CodigoBarras.Text, Descricao.Text );
+                produto.Custo = Convert.ToDecimal(Custo.Text);
+                produto.Venda =  Convert.ToDecimal(Venda.Text);
+                produto.Quantidade = Convert.ToDecimal(Quantidade.Text);
+                produto.Salvar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Erro!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

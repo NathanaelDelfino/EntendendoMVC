@@ -3,127 +3,191 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ProdutoCRUD._03_Visao"
         mc:Ignorable="d"
-        Title="ProdutoView" Height="1000" Width="600">
+        xmlns:local="clr-namespace:ProdutoCRUD._03_Visao"
+        xmlns:funcoes="clr-namespace:ProdutoCRUD._03_Visao.Funcoes"
+        Title="ProdutoView" Height="600" Width="600" WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <!--<funcoes:ConversorDeFonteTamanho x:Key="fontSizeCon"/>--> 
+    </Window.Resources>
+
     <DockPanel Width="auto" Height="auto" LastChildFill="True" Background="#1E90FF">
-        
+
+
         <Grid Width="Auto" Height="Auto">
             <Grid.RowDefinitions>
-                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.8*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="1.6*"/>
+                <RowDefinition Height="1.0*"/>
             </Grid.RowDefinitions>
-            <Label x:Name="Titulo" 
-                   Grid.Row="0"
-                   Content="PRODUTO"
-                   FontSize="60"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.20*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.20*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Button Grid.Column="1" Margin="15,5,15,5" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Users\natha\OneDrive\_Particular\CSharp\MVC\EntendendoMVC\ProdutoCRUD\Imagens\lupa.png"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+            <Viewbox 
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     Width="auto"
+                     Height="auto">
+                <TextBlock
+                   Text="PRODUTO"
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center"
                    Padding="5" 
                    FontWeight="Light"
                    FontFamily="Tahoma"
                    Foreground="White"/>
-
-            <Grid Grid.Row="1">
+            </Viewbox>
+            
+            <Grid Grid.Row="2" Grid.Column="1" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1.0*"/>
                 </Grid.RowDefinitions>
-
-                <Label Content="Codigo Barras" 
-                   Grid.Row="0"
-                   HorizontalAlignment="Center"
-                   FontSize="30"
-                   FontWeight="DemiBold" 
+                <Viewbox 
+                     Width="auto"
+                     Height="auto">
+                    <TextBlock
+                   Text="CODIGO BARRAS"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Padding="5" 
+                   FontWeight="Light"
+                   FontFamily="Tahoma"
                    Foreground="White"/>
-
-                <TextBox Grid.Row="1" 
+                </Viewbox>
+                <TextBox x:Name="CodigoBarras"
+                         Grid.Row="1" 
                          Width="auto"
-                         Margin="20,10,20,10"/>
+                         Height="auto"
+                         FontSize="21"
+                         />
             </Grid>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="3" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1.0*"/>
                 </Grid.RowDefinitions>
-
-                <Label Content="Descrição" 
-                   Grid.Row="0"
-                   HorizontalAlignment="Center"
-                   FontSize="30"
-                   FontWeight="DemiBold" 
+                <Viewbox 
+                     Width="auto"
+                     Height="auto">
+                    <TextBlock
+                   Text="DESCRIÇÃO"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Padding="5" 
+                   FontWeight="Light"
+                   FontFamily="Tahoma"
                    Foreground="White"/>
+                </Viewbox>
 
-                <TextBox Grid.Row="1" 
+                <TextBox x:Name="Descricao"
+                         Grid.Row="1" 
                          Width="auto"
-                         Margin="20,10,20,10"/>
+                         Height="auto"
+                         FontSize="21"/>
             </Grid>
-            <Grid Grid.Row="3">
+            <Grid Grid.Row="4" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1.0*"/>
                 </Grid.RowDefinitions>
 
-                <Label Content="Custo" 
-                   Grid.Row="0"
-                   HorizontalAlignment="Center"
-                   FontSize="30"
-                   FontWeight="DemiBold" 
+                <Viewbox 
+                     Width="auto"
+                     Height="auto">
+                    <TextBlock
+                   Text="CUSTO"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Padding="5" 
+                   FontWeight="Light"
+                   FontFamily="Tahoma"
                    Foreground="White"/>
-
-                <TextBox Grid.Row="1" 
+                </Viewbox>
+                
+                <TextBox x:Name="Custo" 
+                         Grid.Row="1" 
                          Width="auto"
-                         Margin="20,10,20,10"
+                         Height="auto"
                          TextAlignment="Center"
-                         FontSize="35"
+                         FontSize="21"
                          Text="0.00"/>
             </Grid>
-            <Grid Grid.Row="4">
+            <Grid Grid.Row="5" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1.0*"/>
                 </Grid.RowDefinitions>
 
-                <Label Content="Venda" 
-                   Grid.Row="0"
-                   HorizontalAlignment="Center"
-                   FontSize="30"
-                   FontWeight="DemiBold" 
+                <Viewbox 
+                     Width="auto"
+                     Height="auto">
+                    <TextBlock
+                   Text="VENDA"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Padding="5" 
+                   FontWeight="Light"
+                   FontFamily="Tahoma"
                    Foreground="White"/>
-
-                <TextBox Grid.Row="1" 
+                </Viewbox>
+                
+                <TextBox x:Name="Venda"
+                         Grid.Row="1" 
                          Width="auto"
-                         Margin="20,10,20,10"                         TextAlignment="Center"
-                         FontSize="35"
+                         Height="auto"
+                         TextAlignment="Center"
+                         FontSize="21"
                          Text="0.00"/>
             </Grid>
-            <Grid Grid.Row="5">
+            <Grid Grid.Row="6" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="1.0*"/>
                 </Grid.RowDefinitions>
 
-                <Label Content="Quantidade" 
-                   Grid.Row="0"
-                   HorizontalAlignment="Center"
-                   FontSize="30"
-                   FontWeight="DemiBold" 
+                <Viewbox 
+                     Width="auto"
+                     Height="auto">
+                    <TextBlock
+                   Text="QUANTIDADE"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Padding="5" 
+                   FontWeight="Light"
+                   FontFamily="Tahoma"
                    Foreground="White"/>
-
-                <TextBox Grid.Row="1" 
+                </Viewbox>
+                
+                <TextBox x:Name="Quantidade"
+                         Grid.Row="1" 
                          Width="auto"
-                         Margin="20,10,20,10"                         TextAlignment="Center"
-                         FontSize="35"
+                         Height="auto"
+                         TextAlignment="Center"
+                         FontSize="21"
                          Text="0.000"/>
             </Grid>
-            <Grid Grid.Row="6">
+            <Grid Grid.Row="7" Grid.Column="1">
                 <Button Background="#00BFFF"
-                        Margin="10,40,10,40">
+                        Margin="10,20,10,10"
+                        Height="auto"
+                        Width="auto"
+                        Click="Button_Click">
 
                     <Label Content="SALVAR" 
                            Foreground="White"
