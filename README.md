@@ -28,5 +28,4 @@
 
 [Portal TSI](https://www.portalgsti.com.br/2017/08/padrao-mvc-arquitetura-model-view-controller.html) - Padrão MVC | Arquitetura Model-View-Controller 
 
-
-FX6O-8QZB
+[Macoratti](http://www.macoratti.net/vbn_mvc.htm) - Padrões de Projeto : O modelo MVC - Model View  Controller
