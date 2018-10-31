@@ -3,7 +3,7 @@
 
 * É modelo de desenvolvimento que divide o desenvolvimento do aplicativo em 3 camadas (modelo, controle, visão), onde cada camada fica responsável, por uma parte especifica do projeto.
 
-![alt tag](https://raw.githubusercontent.com/NathanaelDelfino/EntendendoMVC/tree/master/imagens/mvc.png)
+![alt tag](https://raw.githubusercontent.com/NathanaelDelfino/EntendendoMVC/master/imagens/mvc.png)
 
 ## Modelo
 * Camada responsável por armazenar os dados.
