@@ -1,6 +1,10 @@
 # Entendendo MVC
 ### Modelo-Visão-Controle
 
+* É modelo de desenvolvimento que divide o desenvolvimento do aplicativo em 3 camadas (modelo, controle, visão), onde cada camada fica responsável, por uma parte especifica do projeto.
+
+![alt tag](https://raw.githubusercontent.com/NathanaelDelfino/EntendendoMVC/tree/master/imagens/mvc.png)
+
 ## Modelo
 * Camada responsável por armazenar os dados.
 * Responsável pela leitura, manipulação e validação do dados.
@@ -23,3 +27,6 @@
 [Wikipedia](https://pt.wikipedia.org/wiki/MVC) - MVC
 
 [Portal TSI](https://www.portalgsti.com.br/2017/08/padrao-mvc-arquitetura-model-view-controller.html) - Padrão MVC | Arquitetura Model-View-Controller 
+
+
+FX6O-8QZB
